@@ -133,7 +133,8 @@ int main(void)
 						badinput();
 					}
 					*/
-					if(numcount == 8){
+				
+					if(numcount == 8 || (s_CalcStatus.e_InputState==WAITING_OP  && s_CalcStatus.e_OutputState==ANSWER_PROVIDED )){
 						badinput();
 					}
 					else{
